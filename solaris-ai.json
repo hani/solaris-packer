@@ -72,7 +72,6 @@
   "post-processors": [
     {
       "compression_level": 6,
-      "keep_input_artifact": true,
       "output": "./builds/{{.Provider}}/solaris11_ai.box",
       "type": "vagrant"
     }
