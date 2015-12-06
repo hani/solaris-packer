@@ -1,23 +1,25 @@
 Solaris packer files
-==============
+====================
 
 Files used to build Solaris Base Box for use with vagrant
 
-See Blogpost http://www.resilvered.com/2014/02/solaris-vagrant-packer-and-base-box.html
+See Blogposts:
+* Using Solaris Unified Archives: http://blog.zach.st/2015/12/06/creating-solaris-11-vagrant-boxes-out-of-unified-archives.html
+* Using Solaris GA installation ISOs:
+http://www.resilvered.com/2014/02/solaris-vagrant-packer-and-base-box.html
 
-Requires
--------
-- Vargrant (1.5.1)
-- Packer (0.6.0)
+Tested on:
+------------
+- Virtualbox 4.3
+- Vargrant 1.7.1
+- Packer 0.8.6
 - Solaris 11_1 text installer
 - Solaris 11_2 text installer
 - Solaris 10 Update 11 DVD image
 
 To use these files
-=============
+------------------
 
-    git clone git://github.com/BigAl/solaris-packer
-    packer build -only=virtualbox-iso solaris11.json
-    packer build -only=vmware-iso solaris11.json
-
-*Tested on Virtualbox 4.3.14*
+    git clone git://github.com/mzachh/solaris-packer
+    packer build -only=virtualbox-iso solaris-ai.json
+    packer build -only=vmware-iso solaris-ai.json
