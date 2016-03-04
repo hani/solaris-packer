@@ -10,11 +10,12 @@ http://www.resilvered.com/2014/02/solaris-vagrant-packer-and-base-box.html
 
 Tested on:
 ------------
-- Virtualbox 4.3
-- Vargrant 1.7.1
-- Packer 0.8.6
+- Virtualbox 5.0.13
+- Vargrant 1.8.1
+- Packer 0.9.0
 - Solaris 11_1 text installer
 - Solaris 11_2 text installer
+- Solaris 11_3 text installer
 - Solaris 10 Update 11 DVD image
 
 To use these files
